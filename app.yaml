@@ -1,0 +1,22 @@
+runtime: python37
+
+env_variables:
+  CLOUD_SQL_USERNAME: root
+  CLOUD_SQL_PASSWORD: password
+  CLOUD_SQL_DATABASE_NAME: data
+  CLOUD_SQL_CONNECTION_NAME: python3-app-test:us-east4:mysql-python-app
+
+# beta_settings:
+#     cloud_sql_instances: mysql-python-app
+
+handlers:
+#   # This configures Google App Engine to serve the files in the app's static
+#   # directory.
+# - url: /static
+#   static_dir: static
+#
+#   # This handler routes all requests not caught above to your main app. It is
+#   # required when static routes are defined, but can be omitted (along with
+#   # the entire handlers section) when there are no static files defined.
+- url: /.*
+  script: auto

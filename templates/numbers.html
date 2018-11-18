@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Guest Book</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Numbers Database</h1>
+      </div>
+      <!-- pass in the result variable which holds the database content -->
+      {% for r in result %}
+      <div>
+        <!-- modify the index template to accept the form data -->
+        <h1>Original Number: {{ r.original }}</h1>
+        <p>Modified number: {{ r.modified }}</p>
+        <p>Random number: {{ r.random }}</p>
+      </div>
+      {% endfor %}
+    </div> <!-- /container -->
+  </body>
+</html>
