@@ -1,5 +1,5 @@
 import os
-# Don't forget to import request
+# Don't forget to import request, you silly goose
 from flask import Flask, render_template, jsonify,request
 import sqlalchemy
 import random
